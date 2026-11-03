@@ -3,6 +3,8 @@
         <!-- NuGet Package Info -->
         <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
         <PackageId>$(MSBuildProjectName)</PackageId>
+        <!-- The title is searched by NuGet with a higher weight than the description; the ID alone gives no separate "mediator" word. -->
+        <Title>$(MSBuildProjectName): free mediator for .NET</Title>
         <Version>2.2.1</Version>
         <Authors>Andrea Ficarra</Authors>
         <Copyright>Copyright © 2026 Andrea Ficarra</Copyright>
@@ -19,7 +21,7 @@
 - No cost when nobody listens; about 0.5 µs per span when recording.
 - Guide: https://adiakys.github.io/AnyMediator/guide/tracing
         </PackageReleaseNotes>
-        <PackageTags>mediator;anymediator;openmediatr;mediatr;mediatr-alternative;cqrs;pipeline;notifications;request-response;streaming;messaging;dotnet;open-source;apache-2.0</PackageTags>
+        <PackageTags>mediator;mediator-pattern;in-process;free;anymediator;openmediatr;mediatr;mediatr-alternative;cqrs;pipeline;notifications;request-response;streaming;messaging;dotnet;open-source;apache-2.0</PackageTags>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageIcon>icon.png</PackageIcon>
         
